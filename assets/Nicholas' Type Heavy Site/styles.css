@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1 {color: #673100;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	margin-top: 30px;
+	margin-bottom:20px;
+}
+header {
+	width: 100%; 
+	height: 600px; 
+	background-image: url("assets/sage-friedman-HS5CLnQbCOc-unsplash.jpg"); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	padding: 20px; 
+}
+h2 {font-family: 'Arvo', serif;
+	font-size: 32px;
+	font-weight: 400;
+	margin-top: auto;
+	color:orangered;
+}
+body {
+	background-color: #D8D895;
+}
+article {
+	background-color: lightskyblue;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	float: left;
+	/*width: 40%*/
+	width: 55%;
+	/*padding-left: 5%;*/
+	/*padding-right: 5%;*/
+}
+aside {
+	background-color: #D8D895;
+	padding-top: 10px;
+	float: right;
+	width: 30%;
+	padding-left: 7.5%;
+	padding-right:7.5%;
+}
+aside h3 {
+	color:#303231;
+}
+aside p {
+	color: darkslategrey;
+}
+img {
+	width: 45%;
+	height: 400px;
+	margin-top: 4.5%;
+}
+footer {
+	clear: both;
+}
+footer p {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: darkorange
+}
+h3 {
+	column-span: all;
+	text-decoration: underline;
+}
+.benefits {
+	column-count: 2;
+	column-gap: 20px;
+	column-rule-style: double;
+	padding-bottom: 30px;
+	border-bottom-style: solid;
+	background-color: aqua;
+}
+.enlighten, .participate, .happenings, .benefits {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.happenings {
+	text-align: left;
+	transform: translateX(70px);
+	background-color: cornsilk;
+	margin-left: -70px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.participate {
+	text-align: left;
+}
+
+@media only screen and (max-width: 660px) {
+	article {
+		float: none;
+		width: 100%;
+	}
+	aside {
+		float: none;
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-top:5px;
+		padding-bottom:5px;
+		font-family:'Quicksand', sans-serif;
+	}
+	aside p {
+		font-size: 14px;
+	}
+	aside h3 {
+		text-align:center;
+	}
+	.happenings {
+		text-align: center;
+		transform: none;
+		margin-left: 0px;
+	}
+	.participate {
+		text-align:left;
+		margin-top:20px;
+	}
+	.benefits h3 {
+		text-align: center;
+	}
+	footer {
+		margin-top: -20px;
+	}
+	header {
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	img {
+		width:100%;
+	}
+}
